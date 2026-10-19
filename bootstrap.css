@@ -487,7 +487,8 @@ button,
 [type=button],
 [type=reset],
 [type=submit] {
-  -webkit-appearance: button;
+    -webkit-appearance: button;
+    appearance: button;
 }
 button:not(:disabled),
 [type=button]:not(:disabled),
@@ -544,8 +545,9 @@ legend + * {
 }
 
 [type=search] {
-  -webkit-appearance: textfield;
-  outline-offset: -2px;
+    -webkit-appearance: textfield;
+    appearance: textfield;
+    outline-offset: -2px;
 }
 [type=search]::-webkit-search-cancel-button {
   cursor: pointer;
@@ -574,8 +576,9 @@ legend + * {
 }
 
 ::file-selector-button {
-  font: inherit;
-  -webkit-appearance: button;
+    font: inherit;
+    -webkit-appearance: button;
+    appearance: button;
 }
 
 output {
@@ -2407,7 +2410,6 @@ textarea.form-control-lg {
   background-size: contain;
   border: var(--bs-border-width) solid var(--bs-border-color);
   -webkit-print-color-adjust: exact;
-  color-adjust: exact;
   print-color-adjust: exact;
 }
 .form-check-input[type=checkbox] {
